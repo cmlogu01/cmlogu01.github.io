@@ -1,7 +1,8 @@
 header{
-	padding:150px;
+	padding:125px;
 	padding-top: 45px;
-	background-image: url("ghibli.png");
+	background-image: url("ghibli2.png");
+	background-size: 100%;
 
 	color: white;
 	font-size: 25px;
