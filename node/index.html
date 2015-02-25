@@ -1,0 +1,103 @@
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NodeBlog</title>
+    <link rel="shortcut icon" href="../manhattan.ico">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="node.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Home</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro, header">
+        <div class="intro-body" id="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 headerinner">
+                        <h1>NodeJS</h1>
+                        <p class="intro-text">A not so in-depth look into the acclaimed runtime environment </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section id="content" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                    <p class="intro">Some of you reading this are experts on NodeJS, and that's fine... but you should leave. This post is not for you seasoned veterans, but rather those of you who read the title and thought "...what?" This will be a basic intro to NodeJS and what it's used for. 
+                    <br><br>I'll start with a bried backstory of how NodeJS came about. The founder of NodeJS is Ryan Dahl. He noticed a file upload bar on Flickr that had to query the Web server to check on the progress of the upload. Dahl saw an area for improvement, and started working on NodeJS with Joyent.
+                    <br><br>So what is NodeJS? First a textbook definition: "Node.js is an open source, cross-platform runtime environment for server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, Linux, FreeBSD, and IBM i". While the focus of NodeJS is on networking, it is a general purpose language that can be used for other things as well.
+                    <br><br>You probably want to know what's so special about NodeJS. One of Node's key strengths is that it is good at idling. You might think of Node like the crime in <a href ="http://static.comicvine.com/uploads/original/11113/111132042/3329749-gotham-city-urban-landscape-wallpaper.jpg">Gotham</a>, it never sleeps. Node only exits when there is nothing left to do. Because it goes idle, but never goes to sleep, Node can handle multiple connections. Here's an example, let's say your website displays "Hello" then pauses 2 seconds before displaying "World". If 100 people accessed the site, it doesn't force users to go one after the other and take 200 seconds to run all the instances. Instead it runs these in parallel, and all 100 connections only take 2 seconds total. Pretty cool, right?
+                    <br><br>So you might think you don't need a feature like that anyways, you're just making your website so you and your Vanilla WoW Guild can message each other about your raid plans this weekend. <img src="wowguy.png" alt="WoWGuy" style="width:270px;height:200px" align="right"> While you might be an exception, in general people want to make their websites scalable, so when you start getting bigger you have a system in place that cooperates. NodeJS is scalable because it is non-blocking, it doesn't make the program wait. Instead it registers a callback and lets the program continue. This means it can handle concurrent operations without multiple threads of execution. 
+                    <br><br>Does any of this sound interesting? If not, I'm terribly sorry. I'll let you get back to farming the Kurast Bazaar for runes. If it does, you can get more information on NodeJS with <a href="https://www.youtube.com/watch?v=jo_B4LTHi3I">this introducion from Ryan Dahl</a> and if you still want more you could also check out <a href="https://www.airpair.com/javascript/node-js-tutorial">this tutorial on NodeJS</a>. Good luck, and have fun!
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>article by Connor Logue</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script><script src="https://maps.gstatic.com/maps-api-v3/api/js/20/1/main.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+
+
+
+</body></html>
